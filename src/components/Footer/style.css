@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
+  background: #29181a;
+  color: #fff;
+  font-weight: normal;
+  align-items: center;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer > div {
+  display: flex;
+}
+
+.footer-icons > * {
+  margin-left: 1rem;
+  cursor: pointer;
+  width:3rem;
+  height:3rem;
+}
+
+@media (max-width: 1240px) {
+  footer {
+    /* display: none; */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  footer > div {
+    flex-direction: column;
+  }
+}

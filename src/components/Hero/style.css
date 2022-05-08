@@ -1,0 +1,224 @@
+body {
+  background: rgba(28, 28, 28, 1);
+  color: var(--default-font-color);
+  background-image: url("../../../public/images/rectangle.svg");
+}
+.hero {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  background: rgba(28, 28, 28, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin-top: 0;
+  /* height: 10px; */
+}
+video {
+  /* margin: -2rem; */
+  opacity: 0.7;
+}
+main {
+  text-align: center;
+  padding: 0rem 18rem;
+  box-sizing: border-box;
+  margin-top: -8rem;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    1s both;
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+main > h1 {
+  font-size: 3em;
+  animation: shake-horizontal 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite
+    both;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-9px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(9px);
+  }
+  80% {
+    transform: translateY(7px);
+  }
+  90% {
+    transform: translateY(-7px);
+  }
+}
+.hero-desc {
+  font-weight: bold;
+  font-size: 1.2em;
+  top:10rem;
+}
+main > button {
+  margin-top: 1rem;
+  background: var(--gradient-bg-btn);
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 1.5rem;
+  color: var(--default-font-color);
+  font-family: var(--default-font-family);
+  transform: translate(0, 0) translate3d(0, 0, 80px);
+  transition: 0.2s;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main > button:hover {
+  opacity: 1;
+  transform: scale(1.1) translate(0, 0) translate3d(0, 0, 80px);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  color: var(--default-font-color);
+  font-size: 1.2em;
+  transition: 0.2s ease;
+  opacity: 0.7;
+}
+@media (max-width: 720px) {
+  .hero {
+    height: 100vh;
+  }
+  main button {
+    opacity: 1;
+  }
+}
+/* main > button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+} */
+
+.info-card {
+  border-radius: 26px;
+
+  /* box-shadow: linear-gradient(90deg, rgba(70, 165, 255, 0.2) 0%, rgba(74, 176, 255, 0.152) 0%, rgba(198, 40, 247, 0.164) 104.87%);
+  box-shadow: linear-gradient(90deg, rgba(70, 165, 255, 0.2) 0%, rgba(74, 176, 255, 0.152) 0%, rgba(198, 40, 247, 0.164) 104.87%); */
+
+  margin: auto;
+  max-width: 1200px;
+  line-height: 1.5;
+  border: 1px solid plum;
+  background: linear-gradient(90deg, rgba(70, 165, 255, 0.2) 0%, rgba(74, 176, 255, 0.152) 0%, rgba(198, 40, 247, 0.164) 104.87%);
+  border-image-source: linear-gradient(89.72deg, #f1e71a 0.22%, #d515fe 99.75%);
+  padding: 1rem 2rem;
+}
+.title {
+  font-size: 1.8em;
+}
+/* .hero {
+  height: 50vh;
+  margin-top: 0;
+} */
+main > h1 {
+  margin-top: 0;
+}
+.video-div {
+  top: 0;
+}
+@media (max-width: 520px) {
+  .info-card {
+    /* bottom: -15rem; */
+  }
+}
+
+.description > p {
+  text-align: center;
+}
+@media (max-width: 1280px) {
+  main {
+    padding: 0 12rem;
+  }
+  /* .info-card {
+    margin: 1rem 3rem;
+  } */
+}
+@media (max-width: 980px) {
+  main {
+    padding: 0 8rem;
+  }
+  .info-card {
+    padding: 1rem 1.4rem;
+  }
+}
+@media (max-width: 720px) {
+  main {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    box-sizing: border-box;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .video-div {
+    top: 0;
+  }
+  main > h1 {
+    /* padding-top: 1rem; */
+    margin: 0;
+    font-size: 2em;
+  }
+  .hero-desc {
+    font-size: 1em;
+    margin-top: 10rem;
+  }
+  .info-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+span.words {
+  position: relative;
+}
+
+span.words::before {
+  content: "business";
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  0% {
+    content: "culture";
+  }
+  50% {
+    content: "shopping";
+  }
+  100% {
+    content: "social events";
+  } 
+}
+main .logo{
+  width: 200px;
+  height: 200px;
+  font-size: 3em;
+  animation: shake-horizontal 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite
+    both;
+}

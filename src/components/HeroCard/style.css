@@ -1,0 +1,26 @@
+.info-card {
+  position: relative;
+  margin-top: 0.8rem;
+}
+.card-image1,
+.card-image2 {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.card-image1 {
+  left: 0;
+}
+.card-image2 {
+  right: 0;
+}
+
+@media (max-width: 520px) {
+  .info-card {
+    /* padding: 0; */
+  }
+  .info-card > .title {
+    font-size: 1.5em;
+  }
+}

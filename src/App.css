@@ -1,0 +1,35 @@
+:root {
+  /* Text Colors */
+  --default-font-color: #fff;
+  /* --default-font-family: "PT sans", "ubuntu", sans-serif; */
+  --font-gradient: -webkit-linear-gradient(120deg, #F29222, #E62579);
+  --font-gradient-2: -webkit-linear-gradient(90deg, #E62579,#F29222);
+  --gradient-bg-btn: linear-gradient(
+    90deg,
+    #46a5ff 0%,
+    rgba(74, 176, 255, 0.76) 0%,
+    rgba(198, 40, 247, 0.82) 104.87%
+  );
+}
+
+.gradient-heading {
+  /* font-family: var(--default-font-family); */
+  background: var(--font-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-heading-2 {
+  /* font-family: var(--default-font-family); */
+  background: var(--font-gradient-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+.app {
+  text-align: center;
+}

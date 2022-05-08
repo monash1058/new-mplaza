@@ -1,0 +1,32 @@
+.stacking-dashboard h2 {
+  margin-bottom: 0;
+  
+}
+
+.dashboard-cards {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.dashboard-card {
+  margin-right: 1rem;
+  text-align: left;
+  background: linear-gradient(90deg, rgba(70, 165, 255, 0.2) 0%, rgba(74, 176, 255, 0.152) 0%, rgba(198, 40, 247, 0.164) 104.87%);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 920px) {
+  .dashboard-cards {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 520) {
+  .dashboard-card {
+    margin-right: 0;
+  }
+}
