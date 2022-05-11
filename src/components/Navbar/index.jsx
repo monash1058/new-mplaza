@@ -21,7 +21,7 @@ export default function Navbar() {
       <nav>
         {/* <h1 className="logo gradient-heading">Logo Here</h1> */}
         <a target="_blank" href="https://mplaza.space/">
-          <img className="logo" src="images/logo.png" />
+          <img className="logo" src="../../../public/images/logo.png"/>
         </a>
         <div className={isOpen ? "" : "close"}>
           <ul className="navlinks">

@@ -29,7 +29,6 @@ function App() {
                 <div className="bg-div">
                   <HeroCard />
                   <Features />
-                  <img className="casino-img" src="images/casino.png" alt="" />
                   <About />
                   <Tokens />
                   <Roadmap />
