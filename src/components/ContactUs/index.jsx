@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import logo from "../../assets/images/logo.png";
 
 export default function ContactUs() {
   return (
     <div className="contact-us">
       <div className="contact-desc" data-aos="flip-left">
         {/* <h1 className="gradient-heading logo">Logo Here</h1> */}
-        <img  className="logo" src="images/logo.png" />
+        <img  className="logo" src={logo} />
         <p>Disclaimer :</p>
         <p>
       This website is distributed for general informational and

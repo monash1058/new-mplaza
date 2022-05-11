@@ -3,6 +3,7 @@ import "./style.css";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import logo from "../../assets/images/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsopen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
       <nav>
         {/* <h1 className="logo gradient-heading">Logo Here</h1> */}
         <a target="_blank" href="https://mplaza.space/">
-          <img className="logo" src="../../../public/images/logo.png"/>
+          <img className="logo" src={logo}/>
         </a>
         <div className={isOpen ? "" : "close"}>
           <ul className="navlinks">

@@ -1,12 +1,16 @@
 import React from "react";
 import "./style.css";
+import tokenomics from "../../assets/images/TokenDist.png";
+import dist from "../../assets/images/Mtokenomics.png";
+import graph from "../../assets/images/graph.png";
+import frames from "../../assets/frames/partition.svg";
 
 export default function Tokens() {
   return (
     <div className="tokens" id="tokenomics" style={{ paddingTop: 50 }}>
       <div className="tokenomics">
         <div className="heading">
-        <img className="responsiveMtoken" src="images/Mtokenomics.png" />
+        <img className="responsiveMtoken" src={tokenomics} />
         </div>
 
         <div className="tokenomics-info">
@@ -18,7 +22,7 @@ export default function Tokens() {
           <img
             draggable="false"
             className="parition"
-            src="frames/partition.svg"
+            src={frames}
             alt="fram-partition"
             data-aos="fade-down"
           />
@@ -34,11 +38,11 @@ export default function Tokens() {
       </div><br></br>
      
       <div className="token-distribution">
-      <div className="responsiveDist"><img  src="images/TokenDist.png" /></div>
+      <div className="responsiveDist"><img  src={dist} /></div>
        <img
           draggable="false"
           className="graph"
-          src="images/graph.png"
+          src={graph}
           alt=""
           data-aos="zoom-in"
         />

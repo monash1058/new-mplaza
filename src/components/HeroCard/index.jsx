@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import logo from "../../assets/images/whatismplaza.png";
 
 export default function HeroCard() {
   console.log(window.innerWidth);
@@ -13,7 +14,7 @@ export default function HeroCard() {
     >
       <div className="info-card">
           {/* <h2 className="gradient-heading">What is Mplaza</h2> */}
-          <img className="responsivePlaza" src="images/whatismplaza.png" />
+          <img className="responsivePlaza" src={logo} />
           <p>
           Mplaza is a unique, all-encompassing virtual commercial hangout space for Web2 and Web3 users to interact, monetize their creations, and experience the metaverse.
           We are creating the ultimate virtual hangout space for business, culture, shopping, events, and socialization.

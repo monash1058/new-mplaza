@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
+import about from "../../assets/images/about.png";
+import token from "../../assets/images/Mplazatoken.png";
+import animate from "../../assets/icons/about-img1.svg";
 
 export default function About() {
   return (
     <div className="about" id="about">
     <div className="about-left about-flex" data-aos="fade-right">
       <div>
-        <img className="responsiveabout" src="images/about.png" />
-        <div className="token"><img className="responsivetoken" src="images/Mplazatoken.png" /></div>
+        <img className="responsiveabout" src={about} />
+        <div className="token"><img className="responsivetoken" src={token} /></div>
 
         <div className="about-info">
           <p>The prime token for this project is $Mplaza.</p>
@@ -46,7 +49,7 @@ export default function About() {
       </div>
 
       <div className="about-right">
-        <img draggable="false" src="icons/about-img1.svg" alt="" />
+        <img draggable="false" src={animate} alt="" />
         {/* <div className="readmore-frame">
           <img
             data-aos="flip-left"
