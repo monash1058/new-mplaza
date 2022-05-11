@@ -1,17 +1,30 @@
 {
   "files": {
     "main.css": "/new-mplaza/static/css/main.e060be8f.css",
-    "main.js": "/new-mplaza/static/js/main.752c36fe.js",
+    "main.js": "/new-mplaza/static/js/main.ad991a80.js",
     "static/media/video.mp4": "/new-mplaza/static/media/video.3832cb81cde30a809a66.mp4",
     "static/media/background1.jpg": "/new-mplaza/static/media/background1.c51e734338fdb2040299.jpg",
+    "static/media/roadMaps.png": "/new-mplaza/static/media/roadMaps.77f1672b531bbd3d4549.png",
+    "static/media/about-img1.svg": "/new-mplaza/static/media/about-img1.f0d0692ffee725e11fd6c3d27b9f30a2.svg",
     "static/media/rectangle.svg": "/new-mplaza/static/media/rectangle.645a52ff4dece62e2dd1.svg",
+    "static/media/graph.png": "/new-mplaza/static/media/graph.7927951b2b28809ca8af.png",
+    "static/media/whatismplaza.png": "/new-mplaza/static/media/whatismplaza.73d84e7f5ab70ba82586.png",
+    "static/media/TokenDist.png": "/new-mplaza/static/media/TokenDist.ec7a985c7dd96d20034b.png",
+    "static/media/Mplazatoken.png": "/new-mplaza/static/media/Mplazatoken.1416c975ac9a02915f50.png",
+    "static/media/Mtokenomics.png": "/new-mplaza/static/media/Mtokenomics.c45074fe933c219ce989.png",
+    "static/media/logo.png": "/new-mplaza/static/media/logo.ae876c841ad434cf16cb.png",
+    "static/media/Roadmap.png": "/new-mplaza/static/media/Roadmap.67272c95232ba5ebbce2.png",
+    "static/media/Mfeatures.png": "/new-mplaza/static/media/Mfeatures.a095e6e9060c5c8e40d8.png",
+    "static/media/vr-camera.png": "/new-mplaza/static/media/vr-camera.bee5b592f947b52635bf.png",
+    "static/media/about.png": "/new-mplaza/static/media/about.947c51d46c1a4ad12589.png",
     "static/media/metaplaza.pdf": "/new-mplaza/static/media/metaplaza.8e82a3f32b17831aac54.pdf",
+    "static/media/partition.svg": "/new-mplaza/static/media/partition.6928c78086013d22963a939026023e91.svg",
     "index.html": "/new-mplaza/index.html",
     "main.e060be8f.css.map": "/new-mplaza/static/css/main.e060be8f.css.map",
-    "main.752c36fe.js.map": "/new-mplaza/static/js/main.752c36fe.js.map"
+    "main.ad991a80.js.map": "/new-mplaza/static/js/main.ad991a80.js.map"
   },
   "entrypoints": [
     "static/css/main.e060be8f.css",
-    "static/js/main.752c36fe.js"
+    "static/js/main.ad991a80.js"
   ]
 }
