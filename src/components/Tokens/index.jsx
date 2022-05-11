@@ -3,10 +3,10 @@ import "./style.css";
 
 export default function Tokens() {
   return (
-    <div className="tokens">
+    <div className="tokens" id="tokenomics" style={{ paddingTop: 50 }}>
       <div className="tokenomics">
         <div className="heading">
-          <h1 className="head gradient-heading">Tokenomics (BEP20)</h1>
+        <img className="responsiveMtoken" src="images/Mtokenomics.png" />
         </div>
 
         <div className="tokenomics-info">
@@ -31,13 +31,14 @@ export default function Tokens() {
           {/* <img draggable="false" src="frames/liquidity.svg" />
             <img draggable="false" src="frames/development.svg" /> */}
         </div>
-      </div>
-
+      </div><br></br>
+     
       <div className="token-distribution">
-        <h1 className="gradient-heading">Token Distribution</h1>
-        <img
+      <div className="responsiveDist"><img  src="images/TokenDist.png" /></div>
+       <img
           draggable="false"
-          src="images/token_distribution.png"
+          className="graph"
+          src="images/graph.png"
           alt=""
           data-aos="zoom-in"
         />

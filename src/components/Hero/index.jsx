@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import vid from "../../assets/video.mp4";
 import pdf from "../../assets/metaplaza.pdf";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
         className="video-div"
         style={{
           position: "absolute",
-          bottom: 0,
+          bottom: 80,
           width: "100%",
           zIndex: -1,
         }}
@@ -28,17 +29,37 @@ export default function Hero() {
         </video>
       </div>
       <main>
-        <h1 className="gradient-heading">Mplaza</h1>
-        {/* <img  className="logo" src="images/logo.png"/> */}
 
-        <div className="hero-desc">
-          A virtual hangout place for <span className="words"></span>.
-        </div>
-        {/* <button>
-          <a href={pdf} rel="noreferrer">
-            Start Now
-          </a>
-        </button> */}
+        <h1
+          style={{
+            paddingTop: "0.5rem",
+            margin: "auto 0 40px",
+            fontWeight: "normal",
+            color: "#f2f2f2"
+          }}
+        >
+          A virtual hangout place for{" "}
+          <span>
+            {/* Style will be inherited from the parent element */}
+            <Typewriter
+              words={[
+                "Culture",
+                "social events",
+                "Shopping",
+                "Business",
+                "Socialization",
+              ]}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              // onLoopDone={handleDone}
+              // onType={handleType}
+            />
+          </span>
+        </h1>
       </main>
     </div>
   );

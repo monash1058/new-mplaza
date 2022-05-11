@@ -1,19 +1,29 @@
 .about {
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
   width: 100%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   box-sizing: border-box;
   text-align: left;
   justify-content: space-between;
   position: relative;
+}
+.about-info {
+  width: 80%;
+}
+.about-flex {
+  width: 80%;
+  margin: auto !important;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 .about > * {
   margin: auto;
 }
 .about-left {
   /* width: 620px; */
-  margin: 15rem 12rem 0 12rem;
+  margin: 2rem 12rem 0 12rem;
 }
 
 .subheading {
@@ -21,9 +31,11 @@
 }
 .head {
   font-size: 3em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .about-right > img {
+  /* margin-top: 5rem; */
+  margin-bottom: 1rem;
   position: relative;
   width: 450px;
   height: auto;
@@ -94,7 +106,22 @@ p {
   left: -6rem;
   bottom: -10rem;
 }
-
+@media (max-width: 1500px) {
+  .about {
+    margin-top: 7rem;
+  }
+  .responsiveabout {
+    width: 30%;
+    height: auto;
+  }
+  .responsivetoken{
+    width: 72%;
+    height: auto;
+  }
+  .token {
+    margin-top: -32px;
+  }
+}
 @media (max-width: 860px) {
   .about {
     padding: 0 1rem;
@@ -113,8 +140,31 @@ p {
   .about-left {
     margin: 10rem 1rem 0 1rem;
   }
+  .responsiveabout {
+    width: 70%;
+    height: auto;
+  }
+  .responsivetoken{
+    width: 100%;
+    height: auto;
+  }
+  .token {
+    margin-top: -15px;
+  }
+  .about-flex {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .about-info {
+    width: 90%;
+    margin: auto;
+  }
 }
-
+.red {
+  background-color: red;
+}
 @media (max-width: 720px) {
   .readmore-frame > img {
     width: 250px;
@@ -122,10 +172,53 @@ p {
   .about-right > img {
     width: 300px;
   }
+  .responsiveabout {
+    width: 70%;
+    height: auto;
+  }
+  .responsivetoken{
+    width: 100%;
+    height: auto;
+  }
+  .token {
+    margin-top: -15px;
+  }
 }
 
 @media (max-width: 520px) {
     .about-left {
     margin: 10rem .5rem 0 .5rem;
   }
+  .responsiveabout {
+    width: 40%;
+    height: auto;
+  }
+  .responsivetoken{
+    width: 100%;
+    height: auto;
+  }
+  .token {
+    margin-top: -15px;
+  }
+  
+}
+@media (max-width: 420px) {
+  .about {
+    margin-top: 0rem;
+  }
+  .about-left {
+  margin: 10rem .5rem 0 .5rem;
+}
+.responsiveabout {
+  width: 40%;
+  height: auto;
+}
+.responsivetoken{
+  width: 100%;
+  height: auto;
+}
+.token {
+  margin-top: -15px;
+}
+
 }

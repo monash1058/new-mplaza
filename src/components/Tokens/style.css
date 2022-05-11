@@ -27,16 +27,7 @@
     display: none;
   }
 }
-@media (max-width: 520px) {
-  .tokenomics-info > img {
-    width: 350px;
-  }
-}
-@media (max-width: 420px) {
-  .tokenomics-info > img {
-    width: 300px;
-  }
-}
+
 
 .token-distribution > h1 {
   font-size: 3.5em;
@@ -56,6 +47,11 @@
     width: 30rem;
     margin-bottom: 1rem;
   }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
+  }
+  
 }
 @media (max-width: 920px) {
   .tokenomics-info {
@@ -63,7 +59,10 @@
   }
   .tokenomics-info .parition {
     display: none;
-    /* width: 3rem; */
+  }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
   }
 }
 .tokens-card {
@@ -110,12 +109,36 @@
   width: 100%;
   z-index: -1;
 }
+@media (max-width: 1500px) {
+  .tokenomics {
+    margin-top: -10rem;
+  }
+  .token-distribution {
+    margin-top: 7rem;
+  }
+  .responsiveMtoken{
+    width: 75%;
+    height: auto;
+  }
+  .token-distribution > .responsiveDist > img{
+    width: 85%;
+    height: auto;
+  }
+}
 @media (max-width: 720px) {
   .token-distribution > img {
     width: 35rem;
   }
   .tokens-card {
     width: 250px;
+  }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
+  }
+  .token-distribution > .responsiveDist > img{
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 620px) {
@@ -128,12 +151,60 @@
   .tokenomics-info img {
     width: 20rem;
   }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
+  }
+  .token-distribution > .responsiveDist > img{
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 520px) {
+  .tokenomics-info > img {
+    width: 350px;
+  }
+  .token-distribution {
+    margin-top: 3rem;
+  }
   .token-distribution > img {
     width: 20rem;
   }
   .token-distribution > h1 {
     font-size: 3em;
+  }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
+  }
+  .token-distribution > .responsiveDist > img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .tokenomics-info > img {
+    width: 300px;
+  }
+  .tokenomics {
+    margin-top: 0rem;
+  }
+  .token-distribution {
+    margin-top: 3rem;
+  }
+  .token-distribution > img {
+    width: 25rem;
+  }
+  .token-distribution > h1 {
+    font-size: 3em;
+  }
+  .responsiveMtoken{
+    width: 100%;
+    height: auto;
+  }
+  .token-distribution > .responsiveDist > img{
+    width: 100%;
+    height: auto;
   }
 }

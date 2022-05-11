@@ -31,28 +31,47 @@
   }
 }
 
-.feature p {
-  /* margin-left: 2rem; */
-}
 .feature img {
   width: 3rem;
 }
 .features main > p {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
-@media (max-width: 1500px) {
-  .features {
+ @media (max-width: 1500px) {
+ .responsive {
+    width: 30%;
+    height: auto;
+    margin-top: 5.8rem;
+  }
+.features {
     margin: 0 6rem;
   }
+
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .features {
     margin: 5rem 1rem;
   }
-}
-@media (max-width: 520px) {
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+} */
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .features {
+    margin: 5rem 1rem;
+  }
   .feature .subheading {
     font-size: 1.8em;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function ContactUs() {
@@ -23,20 +24,22 @@ export default function ContactUs() {
       <div className="contact-links" data-aos="flip-left">
         <h4>Useful Links</h4>
         <ul>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
+        <li>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link to="/terms">Terms & Conditions</Link>
+          </li>
         </ul>
       </div>
-      <div className="contact-form" data-aos="flip-left">
+      {/* <div className="contact-form" data-aos="flip-left">
         <h4>Connect With Us!</h4>
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <button className="join-btn">Join Newsletter</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }

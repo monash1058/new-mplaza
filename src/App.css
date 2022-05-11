@@ -3,6 +3,7 @@
   --default-font-color: #fff;
   /* --default-font-family: "PT sans", "ubuntu", sans-serif; */
   --font-gradient: -webkit-linear-gradient(120deg, #F29222, #E62579);
+  --font-gradientf: -webkit-linear-gradient(120deg, #f7f5f3, #f1edef);
   --font-gradient-2: -webkit-linear-gradient(90deg, #E62579,#F29222);
   --gradient-bg-btn: linear-gradient(
     90deg,
@@ -15,6 +16,13 @@
 .gradient-heading {
   /* font-family: var(--default-font-family); */
   background: var(--font-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-headingfeatures {
+  /* font-family: var(--default-font-family); */
+  background: var(--font-gradientf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
