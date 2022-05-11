@@ -15,7 +15,9 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Terms from "./screens/terms";
 import Privacy from "./screens/terms";
+import Aos from 'aos';
 function App() {
+  Aos.init();
   return (
     <Router>
       <div className="app">
